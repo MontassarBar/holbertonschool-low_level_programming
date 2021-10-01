@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - prints all single digit numbers of base 10 starting from 0
+*main - prints all possible different combinations of two digits
 *loop
 *Return: 0
 **/
