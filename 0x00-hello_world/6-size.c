@@ -2,7 +2,7 @@
 /**
  * main - Prints "the size of various types on the computer "
  *
- * Return: zzfjgsjgzigzijzg. hjhu
+ * Return:  0 on success. Error code otherwise
  */
 int main(void)
 {
