@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - Prints "the size of various types on the computer"
+ * main - Prints "the size of various types on the computer "
  *
- * Return: 0
+ * Return: hhtgtguhiuhygyzftzefteftgtgygtgtfrdrtfddtgugutfrdku
  */
 int main(void)
 {
