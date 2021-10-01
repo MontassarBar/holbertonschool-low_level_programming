@@ -2,7 +2,8 @@
 /**
  * main - Prints "the size of various types on the computer "
  *
- * Return:  0 on success. Error code otherwise
+ * Return: Sum of two operands
+ *
  */
 int main(void)
 {
