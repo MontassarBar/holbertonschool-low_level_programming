@@ -2,7 +2,7 @@
 /**
  * main - Prints "the size of various types on the computer "
  *
- * Return : zzfjgsjgzigzijzg. hjhu
+ * Return: zzfjgsjgzigzijzg. hjhu
  */
 int main(void)
 {
