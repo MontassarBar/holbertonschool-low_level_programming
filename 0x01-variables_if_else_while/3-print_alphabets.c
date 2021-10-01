@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- *
- *
- *
- **/ 
+*main - prints the alphabet in lowercase, and then in uppercase.
+*putchar 3 character
+*Return: 0
+**/
 int main(void)
 {
 int a = 'a';
