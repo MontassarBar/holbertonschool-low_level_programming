@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
 *main - "prints sizeof evaluates the size of a variable"
 *Return:  0 on success. Error code otherwise
