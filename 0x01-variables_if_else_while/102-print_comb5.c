@@ -16,9 +16,7 @@ for (b = '0'; b <= '9' ; b++)
 {
 for (c = '0'; c <= '9'; c++)
 {
-for (d = '0'; d <= '9'; d++)
-{
-if ((a + b) < (c + d))
+for (d =  b + 1; d <= '9'; d++)
 {
 putchar(a);
 putchar(b);
@@ -29,7 +27,6 @@ if (a + b + c + d < '9' + '8' + '9' + '9')
 {
 putchar(',');
 putchar(' ');
-}
 }
 }
 }
