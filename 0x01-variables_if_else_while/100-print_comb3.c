@@ -16,7 +16,8 @@ if (a < b)
 {
 putchar(a);
 putchar(b);
-if (a + b < '8' + '9'){
+if (a + b < '8' + '9')
+{
 putchar(',');
 putchar(' ');
 }
