@@ -1,32 +1,35 @@
 #include <stdio.h>
 /**
- * main - Prints "hii"
- *
- * Return: hi
- */
+*main - prints all possible different combinations of two two-digit numbers
+*loop
+*Return: 0
+**/
 int main(void)
 {
-int x, y, z, r;
-for (x = '0'; x <= '9'; x++)
+int a;
+int b;
+int c;
+int d;
+for (a = '0'; a <= '9'; a++)
 {
-for (y = '0'; y <= '9'; y++)
+for (b = '0'; b <= '9' ; b++)
 {
-for (z = '0'; z <= '9'; z++)
+for (c = '0'; c <= '9'; c++)
 {
-for (r = '0'; r <= '9'; r++)
+for (d =  '0'; d <= '9'; d++)
 {
-if ((x < z) || ((x == z) && (y < r)))
+if (((b < d) && (a == c)) || (a < c))
 {
-if (!(r == '1' && z == '0'))
+if (!(d == '1' && c == '0'))
 {
 putchar(',');
 putchar(' ');
 }
-putchar(x);
-putchar(y);
+putchar(a);
+putchar(b);
 putchar(' ');
-putchar(z);
-putchar(r);
+putchar(c);
+putchar(d);
 }
 }
 }
