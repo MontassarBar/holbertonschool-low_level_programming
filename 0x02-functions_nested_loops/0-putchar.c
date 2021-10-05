@@ -1,6 +1,7 @@
 #include "main.h"
 /**
 *main - prints "_putchar"
+*hi
 *Return :0
 **/
 int main(void)
