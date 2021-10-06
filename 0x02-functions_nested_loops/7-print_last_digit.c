@@ -7,11 +7,9 @@
 **/
 int print_last_digit(int a)
 {
-if (a < 0)
-{
-a = (-1) * a;
-}
 a = a % 10;
+if (a < 0 )
+a = (-1) * a;
 a = a + 48;
 _putchar(a);
 return (4);
