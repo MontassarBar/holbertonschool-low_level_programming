@@ -23,6 +23,7 @@ _putchar(c);
 else
 {
 d = c + 48;
+if (b != 0)
 _putchar(' ');
 _putchar(d);
 }
