@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-*
-*
-*
+*main - “Fizz-Buzz test""
+*loop
+*Return: 0
 **/
 int main(void)
 {
@@ -13,7 +13,7 @@ if ((a % 3 == 0) && (a % 5 == 0))
 {
 printf("FizzBuzz ");
 }
-else if(a % 5 == 0)
+else if (a % 5 == 0)
 {
 printf("Buzz ");
 }
