@@ -9,6 +9,16 @@
 **/
 char *_strcpy(char *dest, char *src)
 {
-strcpy(dest, src);
+int x, y, z;
+y = strlen(src);
+z = 0;
+for (x = 0; x < y; x++)
+{
+dest[z] = src[x];
+z++;
+}
+
+
+
 return (dest);
 }
