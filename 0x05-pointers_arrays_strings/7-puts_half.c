@@ -18,7 +18,7 @@ _putchar(str[i]);
 else if (x % 2 != 0)
 {
 n = (strlen(str) - 1) / 2;
-for (i = n; i < x; i++)
+for (i = n + 1; i < x; i++)
 _putchar(str[i]);
 }
 _putchar('\n');
