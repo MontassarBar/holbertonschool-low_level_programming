@@ -11,6 +11,8 @@ int i, j, x, b;
 char y[1000];
 b = 0;
 j = strlen(s);
+if (j >= 0)
+{
 for (i = 1; i <= j; i++)
 {
 x = j - i;
@@ -18,4 +20,5 @@ y[b] = s[x];
 b++;
 }
 strcpy(s, y);
+}
 }
