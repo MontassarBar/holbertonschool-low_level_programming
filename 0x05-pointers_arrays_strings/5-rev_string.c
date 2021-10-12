@@ -1,20 +1,21 @@
 #include "main.h"
 #include <string.h>
 /**
-*
-*
-*
-*
+*rev_string - reverses a string
+*loop
+*@s: pointer
 **/
 void rev_string(char *s)
 {
-int i, y, a;
-char z[100];
-a = strlen(s);
-for (i = 0; i < a; i++)
+int i, j, x, b;
+char y[1000];
+b = 0;
+j = strlen(s);
+for (i = 1; i <= j; i++)
 {
-y = strlen(s) - i;
-z[i] = s[y];
+x = j - i;
+y[b] = s[x];
+b++;
 }
-strcpy(s, z);
+strcpy(s, y);
 }
