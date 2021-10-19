@@ -20,7 +20,7 @@ for (z = 0; z < a; z++)
 if (s[x] == accept[z])
 break;
 }
-if(s[x] == accept[z])
+if (s[x] == accept[z])
 r++;
 else if (s[x] != accept[z])
 break;
