@@ -9,18 +9,21 @@
 **/
 unsigned int _strspn(char *s, char *accept)
 {
-int x, y, z, a, r, t;
+int x, y, z, a, r;
 y = strlen(s);
 a = strlen(accept);
 r = 0;
-t = y / 2;
-for (x = 0; x < t; x++)
+for (x = 0; x < y; x++)
 {
 for (z = 0; z < a; z++)
 {
 if (s[x] == accept[z])
-r++;
+break;
 }
+if(s[x] == accept[z])
+r++;
+else if (s[x] != accept[z])
+break;
 }
 return (r);
 }
