@@ -8,9 +8,10 @@
  */
 int main(void)
 {
+    char *s = "hello";
     char *f;
 
-    f = _strchr("First, solve the problem. Then, write the code.", ',');
+    f = _strchr(s, 'l');
 
     if (f != NULL)
     {
