@@ -16,8 +16,11 @@ for (x = 0; x < u; x++)
 {
 for (y = 0; y < z; y++)
 {
+if (x >= 0 && x <= u)
+{
 if (needle[x] == haystack[y])
 return (haystack + y);
+}
 }
 }
 return (NULL);
