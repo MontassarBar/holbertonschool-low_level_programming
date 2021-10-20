@@ -9,19 +9,12 @@
 **/
 char *_strstr(char *haystack, char *needle)
 {
-int x, y, z, u;
+int y, z;
 z = strlen(haystack);
-u = strlen(needle);
-for (x = 0; x < u; x++)
-{
 for (y = 0; y < z; y++)
 {
-if (x >= 0 && x <= u)
-{
-if (needle[x] == haystack[y])
+if (*needle == haystack[y])
 return (haystack + y);
-}
-}
 }
 return (NULL);
 }
