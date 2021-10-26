@@ -13,13 +13,18 @@ int x, i, a;
 char *y;
 a = 0;
 x = strlen(str);
-y = malloc(sizeof(*y) * x);
+y = malloc(sizeof(*y) * (x + 1));
 if (y == NULL)
 return (NULL);
+if (str != NULL)
+{
 for (i = 0; i < x; i++)
 {
 y[a] = str[i];
 a++;
 }
 return (y);
+}
+else
+return (NULL);
 }
