@@ -1,2 +1,2 @@
 #!/bin/bash
-ar cr liball.a *c | ranlib liball.a
+ar cr liball.a *.c
