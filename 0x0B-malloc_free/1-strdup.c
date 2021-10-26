@@ -16,7 +16,9 @@ x = strlen(str);
 y = malloc(sizeof(*y) * (x + 1));
 if (y == NULL)
 return (NULL);
-if (str != NULL)
+if (str == NULL)
+return (NULL);
+else
 {
 for (i = 0; i < x; i++)
 {
@@ -25,6 +27,4 @@ a++;
 }
 return (y);
 }
-else
-return (NULL);
 }
