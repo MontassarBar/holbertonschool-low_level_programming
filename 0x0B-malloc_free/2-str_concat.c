@@ -23,7 +23,7 @@ s2 = "";
 }
 x = strlen(s1);
 y = strlen(s2);
-i = malloc(((x + 1) + (y + 1)) * sizeof(*i));
+i = malloc(((x + y) + 1) * sizeof(*i));
 if (i == NULL)
 return (NULL);
 if (s1 == NULL)
