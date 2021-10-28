@@ -18,13 +18,13 @@ if (a == NULL)
 return(NULL);
 for (x = 0; x < height; x++)
 {
-a[x] = malloc(sizeof(x) * width);
+a[x] = malloc(sizeof(a) * width);
 if (a[x] == NULL)
 return(NULL);
 }
-if (a == NULL)
-free(a);
 if (a[x] == NULL)
 free(a[x]);
+if (a == NULL)
+free (a);
 return (a);
 }
