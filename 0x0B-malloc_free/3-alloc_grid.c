@@ -18,7 +18,7 @@ if (a == NULL)
 return(NULL);
 for (x = 0; x < height; x++)
 {
-a[x] = malloc(sizeof(a) * width);
+a[x] = malloc(sizeof(x) * width);
 if (a[x] == NULL)
 return(NULL);
 }
