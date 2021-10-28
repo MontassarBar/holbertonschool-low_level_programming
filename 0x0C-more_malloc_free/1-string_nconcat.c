@@ -30,7 +30,7 @@ v++;
 }
 if (n < y)
 {
-for (i = n; i < y; i++)
+for (i = 0; i < n; i++)
 {
 a[x] = s2[i];
 x++;
