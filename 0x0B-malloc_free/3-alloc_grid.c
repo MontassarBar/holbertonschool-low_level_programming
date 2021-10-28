@@ -15,12 +15,12 @@ if (width <= 0 || height <= 0)
 return (NULL);
 a = malloc(sizeof(a) * height);
 if (a == NULL)
-return(NULL);
+return (NULL);
 for (x = 0; x < height; x++)
 {
 a[x] = malloc(sizeof(x) * width);
 if (a[x] == NULL)
-return(NULL);
+return (NULL);
 }
 for (x = 0; x < height; x++)
 {
@@ -28,6 +28,6 @@ if (a[x] == NULL)
 free(a[x]);
 }
 if (a == NULL)
-free (a);
+free(a);
 return (a);
 }
