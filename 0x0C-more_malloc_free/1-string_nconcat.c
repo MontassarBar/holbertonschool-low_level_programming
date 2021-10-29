@@ -21,7 +21,7 @@ x = strlen(s1);
 y = strlen(s2);
 v = 0;
 if (n < y)
-a = malloc(((x + n) +1) * sizeof(*a));
+a = malloc(((x + n) + 1) * sizeof(*a));
 else
 a = malloc(((x + y) +1) * sizeof(*a));
 if (a == NULL)
