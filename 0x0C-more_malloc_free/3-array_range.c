@@ -15,7 +15,7 @@ int *a;
 y = 0;
 if (min > max)
 return (NULL);
-a = malloc(((max - min) + 1) * sizeof(a));
+a = malloc(((max - min) + 1) * sizeof(int));
 if (a == NULL)
 return (NULL);
 for (x = min; x <= max; x++)
