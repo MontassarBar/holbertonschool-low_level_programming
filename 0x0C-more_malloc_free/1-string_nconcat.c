@@ -21,11 +21,17 @@ x = strlen(s1);
 y = strlen(s2);
 v = 0;
 if (n < y)
+{
 a = malloc(((x + n) + 1) * sizeof(*a));
+if (a == NULL)
+return (NULL);
+}
 else
+{
 a = malloc(((x + y) +1) * sizeof(*a));
 if (a == NULL)
 return (NULL);
+}
 for (z = 0; z < x; z++)
 {
 a[v] = s1[z];
