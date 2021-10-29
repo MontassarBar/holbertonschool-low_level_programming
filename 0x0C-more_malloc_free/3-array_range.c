@@ -15,10 +15,10 @@ int *a;
 y = 0;
 if (min > max)
 return (NULL);
-a = malloc((max - min) * sizeof(*a));
+a = malloc((max - min) * sizeof(a));
 if (a == NULL)
 return (NULL);
-for (x = min; x < max; x++)
+for (x = min; x <= max; x++)
 {
 a[y] = x;
 y++;
