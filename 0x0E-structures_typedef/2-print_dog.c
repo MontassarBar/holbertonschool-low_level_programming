@@ -12,7 +12,7 @@ printf("Name: %s\n", d->name);
 if (d->name == NULL)
 printf("Name: (nil)");
 printf("Age: %f\n", d->age);
-if (d->age == 0)
+if (d->age <= 0)
 printf("Age: (nil)");
 printf("Owner: %s\n", d->owner);
 if (d->owner == NULL)
