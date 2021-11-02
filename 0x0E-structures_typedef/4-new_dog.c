@@ -24,4 +24,10 @@ if (dd->owner == NULL)
 return (NULL);
 dd->owner = owner;
 return (dd);
+if (dd->owner == NULL)
+{
+free(dd->owner);
+free( dd->name);
+free(dd);
+}
 }
