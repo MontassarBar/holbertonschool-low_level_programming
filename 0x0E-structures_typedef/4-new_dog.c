@@ -18,13 +18,13 @@ return (NULL);
 dd->name = malloc(sizeof(*name));
 if (dd->name == NULL)
 return (NULL);
-dd->name = name;
 strdup(name);
+dd->name = name;
 dd->age = age;
 dd->owner = malloc(sizeof(*owner));
 if (dd->owner == NULL)
 return (NULL);
-dd->owner = owner;
 strdup(owner);
+dd->owner = owner;
 return (dd);
 }
