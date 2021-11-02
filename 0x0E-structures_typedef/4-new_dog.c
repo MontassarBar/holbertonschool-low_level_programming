@@ -14,12 +14,12 @@ dog_t *dd;
 dd = malloc(sizeof(dog_t));
 if (dd ==  NULL)
 return (NULL);
-dd->name = malloc(sizeof(name));
+dd->name = malloc(sizeof(*name));
 if (dd->name == NULL)
 return (NULL);
 dd->name = name;
 dd->age = age;
-dd->owner = malloc(sizeof(owner));
+dd->owner = malloc(sizeof(*owner));
 if (dd->owner == NULL)
 return (NULL);
 dd->owner = owner;
