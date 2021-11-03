@@ -9,24 +9,46 @@
 *@owner: pointer
 *Return: dd
 **/
+char *_strdup(char *str)
+{
+int x, i, a;
+char *y;
+a = 0;
+if (str != NULL)
+{
+x = strlen(str);
+y = malloc(sizeof(*y) * (x + 1));
+if (y == NULL)
+return (NULL);
+for (i = 0; i < x; i++)
+{
+y[a] = str[i];
+a++;
+}
+return (y);
+}
+else
+return (NULL);
+}
 dog_t *new_dog(char *name, float age, char *owner)
 {
-char *namecopy;
-char *ownercopy;
 dog_t *dd;
-namecopy = strdup(name);
-ownercopy = strdup(owner);
 dd = malloc(sizeof(dog_t));
 if (dd ==  NULL)
 return (NULL);
-dd->name = malloc(sizeof(*name));
+dd->name = _strdup(name);
 if (dd->name == NULL)
+{
+free(dd);
 return (NULL);
-dd->name = namecopy;
+}
 dd->age = age;
-dd->owner = malloc(sizeof(*owner));
+dd->owner = _strdup(owner);
 if (dd->owner == NULL)
+{
+free(dd->name);
+free(dd);
 return (NULL);
-dd->owner = ownercopy;
+}
 return (dd);
 }
