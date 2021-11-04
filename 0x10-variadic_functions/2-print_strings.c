@@ -17,13 +17,8 @@ for (x = 0; x < n; x++)
 z = va_arg(y, char*);
 if (z == NULL)
 {
-if (separator == NULL)
 printf("(nil)");
-else
-{
-if (x != (n - 1))
-printf("(nil)%s", separator);
-}
+break;
 }
 if (separator == NULL)
 printf("%s", z);
