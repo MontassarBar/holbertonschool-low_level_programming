@@ -18,7 +18,7 @@ for (x = 0; x < n; x++)
 {
 z = va_arg(y, int);
 if (separator == NULL)
-printf("%d ", z);
+printf("%d", z);
 else
 printf("%d%s", z, separator);
 }
