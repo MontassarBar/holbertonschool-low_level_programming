@@ -20,8 +20,12 @@ z = va_arg(y, int);
 if (separator == NULL)
 printf("%d", z);
 else
-printf("%d%s", z, separator);
+{
+printf("%d", z);
+if (x != (n -1))
+printf("%s", separator);
 }
-printf("\n");
+}
 va_end(y);
+printf("\n");
 }
