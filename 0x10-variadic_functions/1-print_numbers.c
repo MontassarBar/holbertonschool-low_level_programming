@@ -22,7 +22,7 @@ printf("%d", z);
 else
 {
 printf("%d", z);
-if (x != (n -1))
+if (x != (n - 1))
 printf("%s", separator);
 }
 }
