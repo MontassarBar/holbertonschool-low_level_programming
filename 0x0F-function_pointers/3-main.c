@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "3-calc.h"
 /**
 *main - the oeration
@@ -19,8 +20,8 @@ exit(98);
 x = atoi(argv[1]);
 y = atoi(argv[3]);
 oper = argv[2];
-if (oper[0] != '+' && oper[0] != '-' &&
-oper[0] != '*' && oper[0] != '/' && oper[0] != '%')
+if ((oper[0] != '+' && oper[0] != '-' &&
+oper[0] != '*' && oper[0] != '/' && oper[0] != '%') || strlen(oper) != 1)
 {
 printf("Error\n");
 exit(99);
