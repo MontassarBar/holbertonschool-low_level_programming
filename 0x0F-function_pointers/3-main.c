@@ -19,7 +19,8 @@ exit(98);
 x = atoi(argv[1]);
 y = atoi(argv[3]);
 oper = argv[2];
-if (oper[0] != '+' && oper[0] != '-' && oper[0] != '*' && oper[0] != '/' && oper[0] != '%')
+if (oper[0] != '+' && oper[0] != '-' &
+oper[0] != '*' && oper[0] != '/' && oper[0] != '%')
 {
 printf("Error\n");
 exit(99);
@@ -30,6 +31,6 @@ printf("Error\n");
 exit(100);
 }
 z = get_op_func(oper)(x, y);
-printf("%d\n",z);
+printf("%d\n", z);
 return (0);
 }
