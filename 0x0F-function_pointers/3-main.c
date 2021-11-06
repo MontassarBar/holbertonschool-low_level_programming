@@ -19,7 +19,7 @@ exit(98);
 x = atoi(argv[1]);
 y = atoi(argv[3]);
 oper = argv[2];
-if (oper[0] != '+' && oper[0] != '-' &
+if (oper[0] != '+' && oper[0] != '-' &&
 oper[0] != '*' && oper[0] != '/' && oper[0] != '%')
 {
 printf("Error\n");
