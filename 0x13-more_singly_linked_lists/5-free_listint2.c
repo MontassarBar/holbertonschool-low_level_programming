@@ -14,6 +14,7 @@ freenode = *head;
 freenodeV2 = freenode;
 while (freenode != NULL)
 {
+freenodeV2 = freenode;
 freenode = freenode->next;
 free(freenodeV2);
 }
