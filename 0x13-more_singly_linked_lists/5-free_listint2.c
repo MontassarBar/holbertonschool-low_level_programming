@@ -6,14 +6,18 @@
 */
 void free_listint2(listint_t **head)
 {
+listint_t *freenode;
 listint_t *freenodeV2;
-if (*head == NULL)
-return;
 while (*head != NULL)
 {
-freenodeV2 = (*head)->next;
-free(*head);
-*head = freenodeV2;
+freenode = *head;
+freenodeV2 = freenode;
+while (freenode != NULL)
+{
+freenodeV2 = freenode;
+freenode = freenode->next;
+free(freenodeV2);
 }
 *head = NULL;
+}
 }
