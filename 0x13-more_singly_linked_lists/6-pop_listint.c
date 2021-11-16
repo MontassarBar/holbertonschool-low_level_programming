@@ -12,6 +12,6 @@ listint_t *ptr;
 ptr = *head;
 data = ptr->n;
 *head = ptr->next;
-free(*head);
+free(ptr);
 return (data);
 }
