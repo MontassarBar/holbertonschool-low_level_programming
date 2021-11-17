@@ -12,6 +12,8 @@ while (*head != NULL)
 {
 freenode = *head;
 freenodeV2 = freenode;
+if (freenode == NULL)
+return;
 while (freenode != NULL)
 {
 freenodeV2 = freenode;
