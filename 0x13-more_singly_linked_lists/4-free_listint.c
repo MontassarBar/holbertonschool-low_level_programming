@@ -10,7 +10,7 @@ if (head == NULL)
 return;
 else
 {
-while (head != NULL)
+while (head->next != NULL)
 {
 free(head);
 head = head->next;
