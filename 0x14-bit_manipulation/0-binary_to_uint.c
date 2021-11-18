@@ -8,11 +8,11 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-int x, y = 1;
+int x, y = 1, f;
 unsigned int z = 0;
-int f = strlen(b);
 if (b == NULL)
 return (0);
+f = strlen(b);
 for (x = f - 1; x >= 0; x--)
 {
 if (b[x] != '1' && b[x] != '0')
