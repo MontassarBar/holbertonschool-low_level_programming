@@ -6,5 +6,5 @@
  */
 int get_endianness(void)
 {
-return(2);
+return (2);
 }
