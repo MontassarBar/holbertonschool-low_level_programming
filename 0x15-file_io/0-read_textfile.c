@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  *read_textfile - reads a text file and prints it to the POSIX standard output
@@ -13,15 +14,18 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int x = 0, y;
+int x = 0, y = 0, u;
+char *BUFFER = malloc(sizeof(char *) * letters);
 if (filename == NULL)
 return (0);
 x = open(filename, O_RDWR);
 if (x == -1)
 return (0);
-y = write(x, filename, letters);
+u = read(x, BUFFER, letters);
+y = write(STDOUT_FILENO, BUFFER, letters);
 if (y == -1)
 return (0);
-close(x);
-return (letters);
+free(BUFFER);
+close (x);
+return (u);
 }
