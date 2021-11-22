@@ -8,7 +8,7 @@
 #include "main.h"
 /**
  *create_file - creates a file
- *@filename: the name of the file to create 
+ *@filename: the name of the file to create
  *@text_content: is a NULL terminated string to write to the file
  *Return: 1 or -1
  */
@@ -27,9 +27,9 @@ if (y == -1)
 return (-1);
 close(x);
 }
-else 
+else
 {
-x = open(filename, O_CREAT | O_TRUNC, 0600);
+x = open(filename, O_CREAT, 0600);
 if (x == -1)
 return (-1);
 }
