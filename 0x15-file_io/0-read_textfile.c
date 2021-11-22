@@ -22,6 +22,7 @@ if (filename == NULL)
 return (0);
 x = open(filename, O_RDWR);
 if (x == -1)
+close(x);
 return (0);
 u = read(x, BUFFER, letters);
 if (u == -1)
