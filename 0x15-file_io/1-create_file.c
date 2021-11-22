@@ -29,7 +29,7 @@ close(x);
 }
 else 
 {
-x = open(filename, O_CREAT, 0600);
+x = open(filename, O_CREAT | O_TRUNC, 0600);
 if (x == -1)
 return (-1);
 }
