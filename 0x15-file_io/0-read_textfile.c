@@ -24,8 +24,10 @@ x = open(filename, O_RDWR);
 if (x == -1)
 return (0);
 u = read(x, BUFFER, letters);
+if (x == -1)
+return (0);
 y = write(STDOUT_FILENO, BUFFER, letters);
-if (y == -1)
+if (x == -1)
 return (0);
 free(BUFFER);
 close(x);
