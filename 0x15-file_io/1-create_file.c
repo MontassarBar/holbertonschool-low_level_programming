@@ -23,7 +23,7 @@ x = open(filename, O_CREAT | O_WRONLY, 0600);
 if (x == -1)
 return (-1);
 y = write(x, text_content, strlen(text_content));
-if (y == -1)
+if (x == -1)
 return (-1);
 close(x);
 }
