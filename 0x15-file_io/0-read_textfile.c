@@ -26,6 +26,6 @@ y = write(STDOUT_FILENO, BUFFER, letters);
 if (y == -1)
 return (0);
 free(BUFFER);
-close (x);
+close(x);
 return (u);
 }
