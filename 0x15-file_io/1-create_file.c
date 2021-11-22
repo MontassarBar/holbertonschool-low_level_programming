@@ -19,7 +19,7 @@ if (filename == NULL)
 return (-1);
 if (text_content != NULL)
 {
-x = open(filename, O_CREAT | O_WRONLY, 0600);
+x = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (x == -1)
 return (-1);
 y = write(x, text_content, strlen(text_content));
