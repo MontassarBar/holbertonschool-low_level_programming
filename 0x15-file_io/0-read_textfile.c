@@ -28,7 +28,10 @@ if (u == -1)
 return (0);
 y = write(STDOUT_FILENO, BUFFER, letters);
 if (y != u)
+{
+free(BUFFER);
 return (0);
+}
 close(x);
 free(BUFFER);
 return (u);
