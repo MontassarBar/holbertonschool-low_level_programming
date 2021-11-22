@@ -26,7 +26,7 @@ return (0);
 u = read(x, BUFFER, letters);
 
 y = write(STDOUT_FILENO, BUFFER, letters);
-if (x == -1)
+if (y == -1)
 return (0);
 free(BUFFER);
 close(x);
