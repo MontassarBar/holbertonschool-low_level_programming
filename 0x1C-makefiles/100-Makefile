@@ -16,6 +16,4 @@ clean:
 oclean:
 	$(RM) $(OBJ)
 
-fclean:
-	$(RM) $(wildcard *~) $(NAME)
-	$(RM) $(OBJ)
+fclean: clean oclean
