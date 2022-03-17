@@ -10,7 +10,7 @@ all: $(OBJ) m.h
 	$(CC) $(OBJ) -o $(NAME)
 
 .PHONY: re
-re: oclean all $(OBJ)
+re: oclean all
 
 .PHONY: clean
 clean:
