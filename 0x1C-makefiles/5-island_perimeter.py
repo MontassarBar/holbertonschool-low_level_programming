@@ -11,6 +11,10 @@ def island_perimeter(grid):
                 if grid[x][y] == 1 and grid[x - 1][y] != 1 and grid[
                         x][y - 1] != 1 and grid[x][y + 1] != 1:
                     n += 3
+                elif grid[x][y] == 1 and grid[x - 1][y] != 1 and grid[
+                        x + 1][y] != 1 and grid[
+                            x][y - 1] != 1 and grid[x][y + 1] != 1:
+                    n += 4
                 elif grid[x][y] == 1 and grid[x - 1][y] != 1 and grid[x + 1][
                         y] != 1 and (grid[
                             x][y - 1] != 1 or grid[x][y + 1] != 1):
