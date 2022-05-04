@@ -26,7 +26,7 @@ while (y <= x)
 	y++;
 }
 if (i == 1)
-	return (value);
+	return (y);
 else
 	return (-1);
 }
